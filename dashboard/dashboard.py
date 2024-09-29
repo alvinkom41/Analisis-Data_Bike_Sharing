@@ -76,15 +76,15 @@ daily_casual_df = create_casual_df(main_df)
 
 
 
-st.header('Statistik Penggunaan Speda :sparkles:')
+st.header('Statistik Penggunaan Sepeda :sparkles:')
 
 st.subheader('Laporan Singkat')
  
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    total_speda = daily_use_df['count'].sum()
-    st.metric("Total Speda Terpakai", value=total_speda)
+    total_sepeda = daily_use_df['count'].sum()
+    st.metric("Total Sepeda Terpakai", value=total_sepeda)
 with col2:
     total_register = daily_register_df['registered'].sum()  
     st.metric("Total Berlangganan", value=total_register)
@@ -94,7 +94,7 @@ with col3:
 
 
 
-st.subheader("Penggunaan Speda Berdasarkan Musim")
+st.subheader("Penggunaan Sepeda Berdasarkan Musim")
  
 fig, ax = plt.subplots(figsize=(10, 5))
  
@@ -104,8 +104,8 @@ sns.barplot(
     data=daily_season_df.sort_values(by="count", ascending=False),
     palette='coolwarm'
 )
-ax.set_title("Penggunaan Speda Berdasarkan Musim", loc="center", fontsize=15)
-ax.set_ylabel('Jumlah Pengguna Speda')
+ax.set_title("Penggunaan Sepeda Berdasarkan Musim", loc="center", fontsize=15)
+ax.set_ylabel('Jumlah Pengguna Sepeda')
 ax.set_xlabel('Musim')
 ax.tick_params(axis='x', labelsize=12)
 
@@ -116,7 +116,7 @@ st.pyplot(fig)
 
 
 
-st.subheader("Penggunaan Speda Berdasarkan Hari Weekday & Weekend")
+st.subheader("Penggunaan Sepeda Berdasarkan Hari Weekday & Weekend")
 
 fig, ax = plt.subplots()
 sns.lineplot(
