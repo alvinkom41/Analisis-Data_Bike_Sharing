@@ -6,7 +6,7 @@ from babel.numbers import format_currency
 sns.set(style='dark')
 
 
-days_df = pd.read_csv("days.csv")
+days_df = pd.read_csv("dashboard/days.csv")
 days_df.head()
 
 days_df['weekday'] = pd.Categorical(days_df['weekday'], categories=
