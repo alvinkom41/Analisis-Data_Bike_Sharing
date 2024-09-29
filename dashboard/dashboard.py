@@ -130,7 +130,7 @@ sns.lineplot(
  
 ax.set_title("Penggunaan Sepeda Berdasarkan Hari", loc="center", fontsize=20)
 plt.xlabel("Hari", fontsize=12)
-ax.set_xlabel("Jumlah Penggunaan Sepeda", fontsize=12)
+ax.set_ylabel("Jumlah Penggunaan Sepeda", fontsize=12)
 st.pyplot(fig)
 
 
