@@ -28,6 +28,9 @@
 - ketikan perintah: **streamlit run hello-world.py**
 - secara otomatis akan terbuka halaman dashboard yang dibuat
 
+### Akses Ke WEB
+https://speda-sharing.streamlit.app/
+
   
 
 
